@@ -5,4 +5,12 @@ node -v
 npm -v
 
 Step 2:
-Clone the repository by: git clone 
+Clone the repository by: git clone https://github.com/ashutoshvt2024/Business-Research-Rankings.git
+
+Step 3 :
+Navigate to the folder where the your repo is cloned and then run: 
+npm install
+
+step 4:
+npm start
+
