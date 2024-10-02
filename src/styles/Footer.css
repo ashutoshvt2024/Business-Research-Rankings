@@ -1,0 +1,62 @@
+/* Footer.css */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #b22222;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 2px solid #8b0000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 60px;
+  position: relative;
+  bottom: 0;
+}
+
+.footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.footer p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%; /* Ensure the body takes up the full viewport height */
+}
+
+/* Ensure the page content grows to fill space above the footer */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure content fills the entire viewport height */
+  padding-bottom: 60px; /* Add space for the footer */
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1; /* Make the content take up the remaining space above the footer */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 0;
+    font-size: 1rem;
+    height: 50px;
+  }
+
+  .landing-page {
+    padding-bottom: 50px; /* Adjust padding for smaller footer height */
+  }
+}

@@ -1,0 +1,104 @@
+/* MembershipPage.css */
+
+.membership-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the page takes full viewport height */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  padding-top: 100px;
+}
+
+.membership-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-grow: 1; /* Makes content area expand to push footer down */
+}
+
+.membership-section,
+.account-section,
+.invoices-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.membership-section h2,
+.account-section h2,
+.invoices-section h2 {
+  font-size: 2rem;
+  color: rgba(0, 0, 0);
+  margin-bottom: 15px;
+  border-bottom: 3px solid rgba(68, 1, 1, 0.843);
+  padding-bottom: 10px;
+}
+
+.membership-table,
+.invoices-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.membership-table th,
+.membership-table td,
+.invoices-table th,
+.invoices-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.membership-table th,
+.invoices-table th {
+  font-weight: bold;
+  background-color: rgba(68, 1, 1, 0.843) ;
+  color: #ffffff;
+}
+
+.membership-table td,
+.invoices-table td {
+  color: #555;
+}
+
+.membership-table tr:hover,
+.invoices-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.account-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.account-details p {
+  margin: 0;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .membership-content {
+    padding: 15px;
+  }
+
+  .membership-section h2,
+  .account-section h2,
+  .invoices-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .account-details {
+    font-size: 1rem;
+  }
+}
